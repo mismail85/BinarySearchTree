@@ -1,3 +1,16 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
 *.log
 *.tlog
 *.obj
@@ -7,3 +20,10 @@
 *.suo
 *.pdb
 *.pch
+
+*.opensdf
+/BinarySearchTree/BinarySearchTree.vcxproj
+/BinarySearchTree/BinarySearchTree.vcxproj.filters
+/BinarySearchTree/Debug/BinarySearchTree.lastbuildstate
+/BinarySearchTree/Debug/vc110.idb
+/Debug/BinarySearchTree.ilk

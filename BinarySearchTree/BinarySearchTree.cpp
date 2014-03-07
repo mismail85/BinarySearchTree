@@ -85,7 +85,24 @@ int BinarySearchTree::min()
 }
 int BinarySearchTree::size()
 {
-
+	int size = 0;
+	if(root != NULL){
+	stack<Node*> parentStack;
+	Node * node = root;
+	while(!parentStack.empty() || node != NULL){
+		if(node != NULL){
+			parentStack.push(node);
+			node = node->left;
+		}
+		else{
+			node = parentStack.top();
+			parentStack.pop();
+			++size;
+			node = node->right;
+		}
+	}
+	}
+	return size;
 }
 
 void BinarySearchTree::storeInFile(string & filePath)

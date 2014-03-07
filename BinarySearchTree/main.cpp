@@ -22,7 +22,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	//tree.insert(13);
 
 	tree.readFromFile(string("d:/tree.txt"));
-	cout << tree.min();
+	cout << tree.size();
 
 	return 0;
 }
